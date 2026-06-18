@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saznajte više o VoltShop prodavnici, našoj misiji i strasti prema inovativnim tehnologijama napajanja mobilnih uređaja.">
+    <title>O nama | VoltShop</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body class="svetla-tema">
+
+    <header class="glavno-zaglavlje">
+        <div class="kontejner zaglavlje-sadrzaj">
+            <div class="logotip-kontejner">
+                <img src="voltshop.png" alt="VoltShop Logotip" id="glavni-logo" class="efekat-slika">
+            </div>
+            <button class="hamburger-meni" id="hamburger-dugme">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="glavna-navigacija" id="navigacioni-meni">
+                <ul class="meni-lista">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html" class="aktivna-veza">O nama</a></li>
+                    <li class="padajuci-meni">
+                        <a href="proizvodi.html" class="padajuci-okidac">Proizvodi ▾</a>
+                        <div class="mega-meni">
+                            <div class="mega-kolona">
+                                <h3>Kućni punjači</h3>
+                                <a href="proizvodi.html#brzi">Brzi punjači (Zidni)</a>
+                            </div>
+                            <div class="mega-kolona">
+                                <h3>Bežična oprema</h3>
+                                <a href="proizvodi.html#bezicni">Bežični stalci</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="kontrole-pristupacnosti">
+                <button id="dugme-tema">Tema</button>
+                <button id="dugme-font">Font</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="glavni-sadrzaj kontejner">
+        <section class="o-nama-sekcija container my-5">
+            <h1>Naša Priča i Misija</h1>
+            <br>
+            <p>VoltShop je osnovan 2021. godine u Zrenjaninu kao mali tim inženjera i entuzijasta koji su želeli da reše problem sporog i nebezbednog punjenja pametnih telefona. Danas smo vodeći distributer opreme za napajanje u regionu.</p>
+            <br>
+            <h2>Tehnološki Standardi</h2>
+            <br>
+            <p>Fokusirani smo na uvođenje GaN (Galijum Nitrid) tehnologije koja omogućava da punjači budu duplo manji, a trostruko efikasniji i brži u odnosu na tradicionalne silicijumske punjače.</p>
+            <br>
+            
+            <center><h3 class="mt-5 mb-3">Zvanični prikaz GaN punjača</h3></center>
+                <div class="video-lokalni-kontejner" style="max-width: 700px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+    
+                    <video controls width="100%" poster="ganpunjac.png" style="display: block; background: #000;">
+                        <source src="gan.mp4" type="video/mp4">
+                        Vaš pretraživač ne podržava reprodukciju video materijala.
+                    </video>
+
+                </div>
+
+                <div class="text-center mt-2">
+                <small class="text-muted">
+                    Video ne učitava spoljne skripte radi lokalne stabilnosti. 
+                    <a href="https://youtu.be/OkZvMqQ_uAc" target="_blank" id="yt-asistent-link" style="color: #007bff; text-decoration: underline;">
+                        Otvori originalni YouTube izvor
+                    </a>
+                    </small>
+                </div>
+
+            <script>
+            document.getElementById('yt-omotač').addEventListener('click', function() {
+                this.innerHTML = `<iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/OkZvMqQ_uAc?autoplay=1" 
+                    title="YouTube video player" 
+                    style="border:0; display: block; position: absolute; top:0; left:0;" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>`;
+                });
+            </script>
+
+                <center><h3 class="mt-5 mb-3">Tehnička dokumentacija</h3></center>
+                <div class="pdf-sekcija" style="max-width: 700px; margin: 0 auto; background: rgba(0,0,0,0.03); padding: 20px; border-radius: 8px; border: 1px dashed #007bff;">
+                    <p class="mb-3">Preuzmite zvanični katalog i detaljne specifikacije naših GaN uređaja u PDF formatu:</p>
+                    <center><a href="gan.pdf" target="_blank" class="btn-pogledaj" style="text-dash: none; text-decoration: none;">
+                        Otvori lokalni PDF katalog
+                    </a>
+                </div>
+
+            </div>
+    </main>
+
+    <section class="lokacija-sekcija">
+    <br>
+    <center><h2>Gde se nalazimo</h2></center>
+    <br>
+    <center><p>Posetite nas na našoj lokaciji u Zrenjaninu. Ispod možete pogledati tačnu mapu:</p></center>
+    
+    <div class="mapa-kontejner">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.123456789!2d20.3923456!3d45.3812345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b6d123456789%3A0x123456789abcdef!2sTehni%C4%8Dki+fakultet+%22Mihajlo+Pupin%22!5e0!3m2!1ssr!2srs!4v1234567890123" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<div class="audio-vodič text-center mt-4">
+    <br>
+    <center><h4 class="mb-2">Poslušajte audio priču o našem brendu:</h4>
+    <br>    
+    <audio controls>
+        <source src="gan.ogg" type="audio/ogg">
+        Vaš pretraživač ne podržava reprodukciju audio materijala.
+    </audio>
+</div>
+
+    <footer class="glavno-podnozje">
+        <div class="kontejner">
+            <p>&copy; 2025 VoltShop. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+
+    <script src="skripta.js"></script>
+</body>
+</html>

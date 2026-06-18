@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pregledajte naš asortiman brzih, bežičnih i auto punjača za sve modele mobilnih telefona.">
+    <title>Proizvodi | VoltShop</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body class="svetla-tema">
+
+    <header class="glavno-zaglavlje">
+        <div class="kontejner zaglavlje-sadrzaj">
+            <div class="logotip-kontejner">
+                <img src="voltshop.png" alt="VoltShop Logotip" id="glavni-logo" class="efekat-slika">
+            </div>
+            <button class="hamburger-meni" id="hamburger-dugme">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="glavna-navigacija" id="navigacioni-meni">
+                <ul class="meni-lista">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li class="padajuci-meni">
+                        <a href="proizvodi.html" class="aktivna-veza padajuci-okidac">Proizvodi ▾</a>
+                        <div class="mega-meni">
+                            <div class="mega-kolona">
+                                <h3>Kućni punjači</h3>
+                                <a href="proizvodi.html#brzi">Brzi punjači (Zidni)</a>
+                            </div>
+                            <div class="mega-kolona">
+                                <h3>Bežična oprema</h3>
+                                <a href="proizvodi.html#bezicni">Bežični stalci</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="kontrole-pristupacnosti">
+                <button id="dugme-tema">Tema</button>
+                <button id="dugme-font">Font</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="glavni-sadrzaj kontejner">
+        <h1 class="my-4">Katalog Proizvoda</h1>
+        
+        <div class="proizvodi-mreza">
+            <div class="proizvod-kartica efekat-sjaj" id="brzi">
+                <div class="slika-okvir">
+                    <img src="ganpunjac.png" alt="Brzi GaN Punjač 65W">
+                </div>
+                <h3>Brzi GaN Punjač 65W</h3>
+                <p>Tri porta (2x USB-C, 1x USB-A) za istovremeno punjenje laptopa i telefona.</p>
+                <span class="cena">4.200 RSD</span>
+            </div>
+
+            <div class="proizvod-kartica efekat-sjaj" id="bezicni">
+                <div class="slika-okvir">
+                    <img src="stalak.png" alt="Bežični Magnetni Stalak 15W">
+                </div>
+                <h3>Bežični Magnetni Stalak 15W</h3>
+                <p>Kompatibilan sa MagSafe tehnologijom i Qi sertifikovanim telefonima.</p>
+                <span class="cena">3.500 RSD</span>
+            </div>
+
+            <div class="proizvod-kartica efekat-sjaj" id="auto">
+                <div class="slika-okvir">
+                    <img src="auto.png" alt="Brzi Auto Punjač Metalni 30W">
+                </div>
+                <h3>Brzi Auto Punjač Metalni 30W</h3>
+                <p>Kompaktan dizajn koji se savršeno uklapa u upaljač automobila sa plavim LED osvetljenjem.</p>
+                <span class="cena">1.800 RSD</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glavno-podnozje">
+        <div class="kontejner">
+            <p>&copy; 2025 VoltShop. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="skripta.js"></script>
+</body>
+</html>

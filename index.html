@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prodaja vrhunskih mobilnih punjača, brzih kućnih punjača i bežičnih stanica. Osigurajte stabilnu energiju za vaš telefon.">
+    <meta name="keywords" content="mobilni punjaci, brzi punjac, bezicni punjac, oprema za telefone, srbija">
+    <title>VoltShop | Prodaja Mobilnih Punjača</title>
+        <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body class="svetla-tema">
+
+    <header class="glavno-zaglavlje">
+        <div class="kontejner zaglavlje-sadrzaj">
+            <div class="logotip-kontejner">
+                <img src="voltshop.png" alt="VoltShop Logotip" id="glavni-logo" class="efekat-slika">
+            </div>
+            
+            <button class="hamburger-meni" id="hamburger-dugme" aria-label="Otvori meni">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="glavna-navigacija" id="navigacioni-meni">
+                <ul class="meni-lista">
+                    <li><a href="index.html" class="aktivna-veza">Početna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li class="padajuci-meni">
+                        <a href="proizvodi.html" class="padajuci-okidac">Proizvodi ▾</a>
+                        <div class="mega-meni">
+                            <div class="mega-kolona">
+                                <h3>Kućni punjači</h3>
+                                <a href="proizvodi.html#brzi">Brzi punjači (Zidni)</a>
+                                <a href="proizvodi.html#standardni">Standardni USB</a>
+                            </div>
+                            <div class="mega-kolona">
+                                <h3>Bežična oprema</h3>
+                                <a href="proizvodi.html#bezicni">Bežični stalci</a>
+                                <a href="proizvodi.html#auto">Punjači za automobil</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="kontrole-pristupacnosti">
+                <button id="dugme-tema" title="Promeni temu">Tema</button>
+                <button id="dugme-font" title="Promeni veličinu fonta">A+ Veliki Font</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-sekcija">
+        <div class="slider-pozadina">
+            <img src="ganpunjac.png" class="slajd-slika aktivna" alt="GaN Punjač">
+            <img src="auto.png" class="slajd-slika" alt="Auto punjač">
+            <img src="stalak.png" class="slajd-slika" alt="Bežični stalak">
+        </div>
+
+        <div class="hero-sadrzaj">
+            <h1>Najbrži Punjači na Tržištu</h1>
+            <p>Napunite vaš telefon do 80% za samo 30 minuta uz našu novu GaN tehnologiju.</p>
+            <a href="proizvodi.html" class="btn-pogledaj">Pogledaj ponudu</a>
+        </div>
+    </section>
+
+    <main class="glavni-sadrzaj kontejner">
+        <section class="istaknute-stavke container my-5">
+            <h2 class="centriran-naslov text-center mb-5">Zašto odabrati VoltShop?</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="kartica-prednosti efekat-sjaj h-100">
+                        <h3>Sertifikovan kvalitet</h3>
+                        <br>
+                        <p>Svi naši punjači poseduju CE i RoHS sertifikate koji garantuju stabilan napon i bezbednost vašeg uređaja.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kartica-prednosti efekat-sjaj h-100">
+                        <h3>Garancija 24 meseca</h3>
+                        <br>
+                        <p>Sigurni smo u dugotrajnost naših proizvoda. Nudimo punu garanciju i brzu zamenu u slučaju kvara.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="kartica-prednosti efekat-sjaj h-100">
+                        <h3>Besplatna dostava</h3>
+                        <br>
+                        <p>Za sve porudžbine preko 3.000 RSD, isporuka na vašu kućnu adresu je potpuno besplatna u roku od 48 sati.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glavno-podnozje">
+        <div class="kontejner podnozje-sadrzaj">
+            <p>&copy; 2025 VoltShop. Sva prava zadržana. | Nastavni predmet: Veb dizajn</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="skripta.js"></script>
+</body>
+</html>

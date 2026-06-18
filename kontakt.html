@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte VoltShop korisničku podršku. Tu smo da odgovorimo na sva vaša pitanja u vezi punjača.">
+    <title>Kontakt | VoltShop</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body class="svetla-tema">
+
+    <header class="glavno-zaglavlje">
+        <div class="kontejner zaglavlje-sadrzaj">
+            <div class="logotip-kontejner">
+                <img src="voltshop.png" alt="VoltShop Logotip" id="glavni-logo" class="efekat-slika">
+            </div>
+            <button class="hamburger-meni" id="hamburger-dugme">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="glavna-navigacija" id="navigacioni-meni">
+                <ul class="meni-lista">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li class="padajuci-meni">
+                        <a href="proizvodi.html" class="padajuci-okidac">Proizvodi ▾</a>
+                        <div class="mega-meni">
+                            <div class="mega-kolona">
+                                <h3>Kućni punjači</h3>
+                                <a href="proizvodi.html#brzi">Brzi punjači</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="kontakt.html" class="aktivna-veza">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="kontrole-pristupacnosti">
+                <button id="dugme-tema">Tema</button>
+                <button id="dugme-font">Font</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="glavni-sadrzaj kontejner">
+        <div class="kontakt-sekcija container my-4">
+            <h1>Kontaktirajte nas</h1>
+            <br>
+            <p>Imate pitanja ili želite da napravite veleprodajnu porudžbinu? Popunite formu ispod.</p>
+            <br>
+
+            <form id="kontakt-forma" class="kontakt-obrazac shadow-sm" novalidate>
+                <div class="forma-grupa mb-3">
+                    <label for="ime" class="form-label">Ime i prezime:</label>
+                    <input type="text" id="ime" name="ime" class="form-control" required minlength="4" placeholder="Petar Petrović">
+                    <span class="poruka-greske text-danger" id="greska-ime"></span>
+                </div>
+
+                <div class="forma-grupa mb-3">
+                    <label for="email" class="form-label">E-mail adresa:</label>
+                    <input type="email" id="email" name="email" class="form-control" required placeholder="petar@gmail.com">
+                    <span class="poruka-greske text-danger" id="greska-email"></span>
+                </div>
+
+                <div class="forma-grupa mb-3">
+                    <label for="poruka" class="form-label">Vaša poruka:</label>
+                    <textarea id="poruka" name="poruka" class="form-control" rows="4" required minlength="10" placeholder="Unesite vaše pitanje ovde..."></textarea>
+                    <span class="poruka-greske text-danger" id="greska-poruka"></span>
+                </div>
+
+                <button type="submit" class="dugme-posalji btn btn-primary w-100 fw-bold">Pošalji poruku</button>
+                <div id="poruka-uspeh" class="skrivena-poruka alert alert-success mt-3" style="display:none;">Vaša poruka je uspešno prihvaćena i poslata!</div>
+            </form>
+                <audio id="zvuk-uspeh" preload="auto">
+                <source src="GRACENO.wav" type="audio/wav">
+                </audio>
+        </div>
+    </main>
+
+    <footer class="glavno-podnozje">
+        <div class="kontejner">
+            <p>&copy; 2025 VoltShop. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="skripta.js"></script>
+</body>
+</html>
